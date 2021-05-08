@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
-  git checkout main
-git merge --no-ff master
-git push origin main
+git fetch origin
+git checkout -b master origin/master
+git merge main
   specs:
     activesupport (6.0.3.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
